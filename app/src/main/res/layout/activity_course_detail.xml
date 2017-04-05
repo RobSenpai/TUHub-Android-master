@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.temple.tuhub.CourseSearchAllDetail"
+    android:weightSum="1"
+    android:id="@+id/course_detail">
+
+
+    <View
+        android:background="#990033"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/courseDetailText"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/view" />
+    <View
+        android:background="#990033"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/grade"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <TextView
+        android:text="Course"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/courseDetailText"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:text="Grade"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gradeLabel"
+        android:textColor="#000000"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:text="gradeResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grade"
+        android:layout_alignBaseline="@+id/gradeLabel"
+        android:layout_alignBottom="@+id/gradeLabel"
+        android:layout_alignEnd="@+id/gradeLabel"
+        android:layout_marginEnd="21dp" />
+
+    <TextView
+        android:text="courseResults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/course"
+        android:layout_alignBaseline="@+id/courseDetailText"
+        android:layout_alignBottom="@+id/courseDetailText"
+        android:layout_alignEnd="@+id/grade" />
+
+
+
+</RelativeLayout>
